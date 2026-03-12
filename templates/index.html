@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Weather App</h1>
+
+<form method="POST">
+
+<select name="city">
+
+<option value="Warsaw">Warsaw</option>
+<option value="London">London</option>
+<option value="Berlin">Berlin</option>
+<option value="Paris">Paris</option>
+
+</select>
+
+<button name="action" value="get_weather">Show weather</button>
+    <form method="POST">
+        <button name="action" value="weather_history">Check weather history</button>
+    </form>
+
+</form>
+
+{% if weather %}
+
+<div class="weather-box">
+
+<h2>{{ weather.city }}</h2>
+
+<p>Temperature: {{ weather.temperature }} °C</p>
+<p>Humidity: {{ weather.humidity }} %</p>
+<p>Description: {{ weather.description }}</p>
+
+<form method="POST">
+
+<button name="action" value="save_weather">
+Save weather to database
+</button>
+
+</form>
+
+
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>

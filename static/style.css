@@ -1,0 +1,58 @@
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+.container {
+
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+select {
+
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.weather-box {
+
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+}
